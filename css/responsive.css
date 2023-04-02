@@ -1,0 +1,122 @@
+@media(max-width:769px){
+    #sidenav{
+        display: block
+    }
+    #menubar{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        transform: translateY(0%, -50%);
+        z-index: 99;
+        background-color: var(--primary);
+        color: white;
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 10px 20px;
+        animation: animate 5s ease infinite;
+    }
+    @keyframes animate {
+        0%{
+            background-color: var(--secondary);
+        }
+        100%{
+            background-color: var(--primary);
+        }
+    }
+    /* NAV3 START */
+    #sidenav{
+    width: 0px;
+    height: 100vh;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: var(--light);
+    padding-top: 70px;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+#sidenav ul{
+    list-style: none;
+}
+#sidenav ul li{
+    display: block;
+    width: 200px;
+    position: relative;
+    z-index: 99;
+    /* margin: 10px 20px; */
+}
+#sidenav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    display: block;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+#sidenav ul li a:hover{
+    color: var(--primary);
+}
+#sidenav ul li i{
+    color: white;
+    margin: 0 5px;
+}
+#sidenav ul ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+}
+#sidenav ul ul li{
+    border-bottom: 1px solid white;
+}
+#sidenav ul li:hover>ul {
+    display: block;
+}
+    .nav1 {
+        z-index: 2;
+        position: relative;
+        background-color: white;
+    }
+    .nav1 .right i{
+        font-size: 15px;
+        margin: 0 5px;
+    }
+    .nav2 {
+        height: 80px;
+    }
+    .nav2 .nav2-left i{
+        margin-left: 0px;
+        display: inline;
+    }
+    .nav2 .nav2-center h1{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    .nav2 .nav2-center p{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .nav2 .nav2-right i{
+        margin: 0 5px;
+    }
+    .nav3{
+        display: none;
+    }
+    .latest {
+        padding: 0px 50px;
+    }
+    .trend {
+        padding: 20px 50px;
+    }
+    .trend .swiper-slide {
+        width: 360px;
+        height: 360px;
+    }
+    .price-card{
+        padding-bottom: 10px;
+    }
+}
